@@ -1,39 +1,3 @@
-# from database.db_connection import get_db_connection
-
-# # 📌 Add Book
-# def add_book(title, author, genre):
-#     conn = get_db_connection()
-#     cursor = conn.cursor()
-#     cursor.execute("INSERT INTO books (title, author, genre) VALUES (%s, %s, %s)", 
-#                    (title, author, genre))
-#     conn.commit()
-#     conn.close()
-
-# # 📌 View Books
-# def view_books():
-#     conn = get_db_connection()
-#     cursor = conn.cursor()
-#     cursor.execute("SELECT id, title, author, genre, status FROM books")
-#     data = cursor.fetchall()
-#     conn.close()
-#     return data
-
-# # 📌 Update Book Status
-# def update_status(book_id, status):
-#     conn = get_db_connection()
-#     cursor = conn.cursor()
-#     cursor.execute("UPDATE books SET status = %s WHERE id = %s", (status, book_id))
-#     conn.commit()
-#     conn.close()
-
-# # 📌 Delete Book
-# def delete_book(book_id):
-#     conn = get_db_connection()
-#     cursor = conn.cursor()
-#     cursor.execute("DELETE FROM books WHERE id = %s", (book_id,))
-#     conn.commit()
-#     conn.close()
-
 from database.db_connection import get_db_connection
 
 # 📌 Add a Book to Database
