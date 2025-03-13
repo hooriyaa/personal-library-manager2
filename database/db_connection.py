@@ -9,7 +9,6 @@
 #         auth_plugin='mysql_native_password'
 #     )
 
-
 import mysql.connector
 
 # 📌 Connect to MySQL Database
